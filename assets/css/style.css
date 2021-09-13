@@ -154,7 +154,8 @@ main{
   height: 10px;
   width: 5px;
   background: var(--primary-color);
-  box-shadow: -400px 0 0 400 var(--primary-color);
+  cursor: pointer;
+  box-shadow: -400px 0 0 400px var(--primary-color);
 }
 .current-time{
   position: absolute;
@@ -164,7 +165,7 @@ main{
 .duration{
   position: absolute;
   margin-top: 5px;
-  left: 30px;
+  right: 30px;
 }
 .music-player-controls{
   position: relative;
