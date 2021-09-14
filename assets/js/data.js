@@ -16,7 +16,7 @@ let songs = [
       path: 'assets/musics/urban-rebel_by_ikoliks.mp3',
       artist: 'ikoliks',
       cover: 'assets/imgs/ikoliks-Urban-Rebel.jpg'
-  },
+  }/*,
   {
       name: 'song 4',
       path: 'assets/musics/Song 4.mp3',
@@ -58,5 +58,5 @@ let songs = [
       path: 'assets/musics/Song 10.mp3',
       artist: 'artist 10',
       cover: 'assets/imgs/cover 10.png'
-  }
+  }*/
 ]

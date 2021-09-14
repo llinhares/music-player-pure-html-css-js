@@ -18,11 +18,12 @@ setInterval(() => {
   changeCarousel()
 }, 5000)
 
-/* toggle music player */
-/** open **/
+/* toggle music player and playlist navigation */
+/** music player **/
+/*** open ***/
 const musicPlayer = document.querySelector('.music-player')
 
-/** drag to open **/
+/*** drag to open ***/
 let touchStart = 0
 let touchmove = 0
 musicPlayer.addEventListener('touchstart', (e) => {
@@ -35,7 +36,7 @@ musicPlayer.addEventListener('touchmove', (e) => {
   }
 })
 
-/** double click to open **/
+/*** double click to open ***/
 let doubleClick = 1
 
 musicPlayer.addEventListener('click', () => {
@@ -49,26 +50,43 @@ musicPlayer.addEventListener('click', () => {
     doubleClick = 1
   }, 250)
 })
-/** close **/
+/*** close ***/
 const musicPlayerBackBtn = document.querySelector('.music-player .back-btn')
 
 musicPlayerBackBtn.addEventListener('click', () => {
   musicPlayer.classList.remove('active')
 })
 
-/* toggle playlist */
-/** open **/
+/** toggle playlist **/
+/*** open ***/
 const currentPlaylist = document.querySelector('.current-playlist')
 const playlistBtn = document.querySelector('.music-player .nav-btn')
 
 playlistBtn.addEventListener('click', () => {
   currentPlaylist.classList.add('active')
 })
-/** close **/
+/*** close ***/
 const playlistBackBtn = document.querySelector('.current-playlist .back-btn')
 
 playlistBackBtn.addEventListener('click', () => {
   currentPlaylist.classList.remove('active')
+})
+
+/* playlist */
+const queueList = document.querySelector('.queue-list')
+
+/** mount playlist **/
+songs.forEach((item, i) => {
+  let active = (i == 0)? 'active' : ''
+  queueList.innerHTML += `
+  <div class="queue ${active}">
+    <div class="queue-cover">
+        <img src="${item['cover']}" alt="" />
+        <i class="fas fa-pause"></i>
+    </div>
+    <p class="name">${item['name']}</p>
+  </div>
+  `
 })
 
 /* audio */
@@ -91,6 +109,9 @@ const pauseBtn = document.querySelector('.music-player-controls i.fa-pause')
 const forwardBtn = document.querySelector('.music-player-controls i.fa-forward')
 const volumeBtn = document.querySelector('.music-player-controls span.fa-volume-up')
 const volumeSlider = document.querySelector('.music-player-controls .volume-slider')
+
+/** playlist **/
+const queue = [...document.querySelectorAll('.queue')]
 
 /** events **/
 /*** play event ***/
@@ -173,22 +194,33 @@ const setMusic = (i) => {
     duration.innerHTML = formatTime(music.duration)
   }, 300)
   currentTime.innerHTML = '00:00'
+  queue.forEach(item => item.classList.remove('active'))
+  queue[currentMusic].classList.add('active')
 }
 /*** format music duration 00:00 ***/
 const formatTime = (time) => {
-  let min = Math.floor(time / 60);
+  let min = Math.floor(time / 60)
 
   if(min < 10){
-      min = `0` + min;
+      min = `0` + min
   }
 
-  let sec = Math.floor(time % 60);
+  let sec = Math.floor(time % 60)
 
   if(sec < 10){
-      sec = `0` + sec;
+      sec = `0` + sec
   }
 
   return `${min}:${sec}`
 }
 
+/* playlist events */
+queue.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    setMusic(i)
+    playBtn.click()
+  })
+})
+
+/* start playlist music*/
 setMusic(0)
