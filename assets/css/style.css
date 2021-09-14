@@ -5,13 +5,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 :root{
-  --background: #202124;
-  --text-color: #e8eaed;
-  --primary-color: #63ff69;
-  --secondary-color: #000;
-  --alpha-color: rgba(0,0,0,.5);
+  --background: rgb(15, 16, 41);
+  --text-color: rgb(232,234,237);
+  --primary-color: rgb(241,25,106);
+  --secondary-color: rgb(2,88,147);
+  --alpha-color: rgba(28,28,28,.5);
   --shadow: 0 15px 40px var(--alpha-color);
 }
 html{
@@ -266,7 +268,8 @@ main{
   top: 0;
   right: -100%;
   padding: 30px 0;
-  background: var(--background);
+  background: var(--alpha-color);
+  backdrop-filter: blur(50px);
   z-index: 3;
   transition: 1s;
 }
@@ -291,6 +294,8 @@ main{
 }
 .queue-cover{
   position: relative;
+  min-width: 60px;
+  min-height: 60px;
   width: 60px;
   height: 60px;
   border-radius: 10px;

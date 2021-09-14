@@ -3,7 +3,7 @@ let songs = [
       name: 'Flight of the Inner Bird',
       path: 'assets/musics/flight-of-the-inner-bird_by_sivan-talmor.mp3',
       artist: 'Sivan Talmor',
-      cover: 'assets/imgs/Sivan-Talmor-Vol-2-.jpg'
+      cover: 'assets/imgs/Sivan-Talmor-Vol-2.jpg'
   },
   {
       name: 'Coming Back Home',
@@ -16,47 +16,47 @@ let songs = [
       path: 'assets/musics/urban-rebel_by_ikoliks.mp3',
       artist: 'ikoliks',
       cover: 'assets/imgs/ikoliks-Urban-Rebel.jpg'
-  }/*,
-  {
-      name: 'song 4',
-      path: 'assets/musics/Song 4.mp3',
-      artist: 'artist 4',
-      cover: 'assets/imgs/cover 4.png'
   },
   {
-      name: 'song 5',
-      path: 'assets/musics/Song 5.mp3',
-      artist: 'artist 5',
-      cover: 'assets/imgs/cover 5.png'
+      name: 'We\'re All Having Fun',
+      path: 'assets/musics/were-all-having-fun_by_russo-and-weinberg.mp3',
+      artist: 'Russo & Weinberg',
+      cover: 'assets/imgs/Russo-and-Weinberg-Safe.jpg'
   },
   {
-      name: 'song 6',
-      path: 'assets/musics/Song 6.mp3',
-      artist: 'artist 6',
-      cover: 'assets/imgs/cover 6.png'
+      name: 'Baby Smile',
+      path: 'assets/musics/baby-smile_by_lux-inspira.mp3',
+      artist: 'Lux-Inspira',
+      cover: 'assets/imgs/Lux-Inspira-Make-It-Easy.jpg'
   },
   {
-      name: 'song 7',
-      path: 'assets/musics/Song 7.mp3',
-      artist: 'artist 7',
-      cover: 'assets/imgs/cover 7.png'
+      name: 'Still Holding On',
+      path: 'assets/musics/still-holding-on_by_tristan-barton.mp3',
+      artist: 'Tristan Barton',
+      cover: 'assets/imgs/Tristan.jpg'
   },
   {
-      name: 'song 8',
-      path: 'assets/musics/Song 8.mp3',
-      artist: 'artist 8',
-      cover: 'assets/imgs/cover 8.png'
+      name: 'Thankful',
+      path: 'assets/musics/thankful_by_wes-harris.mp3',
+      artist: 'Wes Harris',
+      cover: 'assets/imgs/Wes_Harris-Thankful.jpg'
   },
   {
-      name: 'song 9',
-      path: 'assets/musics/Song 9.mp3',
-      artist: 'artist 9',
-      cover: 'assets/imgs/cover 9.png'
+      name: 'The Vibe',
+      path: 'assets/musics/the-vibe_by_ben-fox.mp3',
+      artist: 'Ben Fox',
+      cover: 'assets/imgs/Ben_Fox-The_Vibe.jpg'
   },
   {
-      name: 'song 10',
-      path: 'assets/musics/Song 10.mp3',
-      artist: 'artist 10',
-      cover: 'assets/imgs/cover 10.png'
-  }*/
+      name: 'Breaking of Glass',
+      path: 'assets/musics/breaking-of-glass_by_iby.mp3',
+      artist: 'IBY',
+      cover: 'assets/imgs/IBY-Felicitari.jpg'
+  },
+  {
+      name: 'The Oracle',
+      path: 'assets/musics/the-oracle_by_dimitrix.mp3',
+      artist: 'Dimitrix',
+      cover: 'assets/imgs/Dimitrix-Off_the_Grid.jpg'
+  }
 ]
