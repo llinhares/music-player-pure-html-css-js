@@ -9,20 +9,26 @@
   <meta name="language" content="en">
   <meta name='author' content='Lucas Linhares, https://lucaslinhares.dev.br'>
   <title>Web Music Player - Pure HTML, CSS and Js</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="music-player-header">
+    <i class="fas fa-drum"></i> Web Music Player
+  </header>
   <main>
     <!-- home -->
     <article class="home">
       <!-- carousel -->
-      <section class="carousel">
-          <img src="https://dummyimage.com/375x200/000/0011ff" class="active" alt="" />
-          <img src="https://dummyimage.com/375x200/9e619e/636363" alt="" />
-          <img src="https://dummyimage.com/375x200/3e473b/d15ad1" alt="" />
-          <img src="https://dummyimage.com/375x200/ba6107/465d78" alt="" />
-          <img src="https://dummyimage.com/375x200/b80730/0f6328" alt="" />
+      <section class="carousel notched-corners">
+        <img src="https://dummyimage.com/375x200/000/0011ff" class="active" alt="" />
+        <img src="https://dummyimage.com/375x200/9e619e/636363" alt="" />
+        <img src="https://dummyimage.com/375x200/3e473b/d15ad1" alt="" />
+        <img src="https://dummyimage.com/375x200/ba6107/465d78" alt="" />
+        <img src="https://dummyimage.com/375x200/b80730/0f6328" alt="" />
       </section>
       <!--start recently played -->
       <!-- playlists recently played -->
@@ -33,27 +39,27 @@
         <div class="playlists-group">
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/ff00ff/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/ff00ff/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 1</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/00ffb7/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/00ffb7/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 2</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/007691/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/007691/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 3</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/d7de00/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/d7de00/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 4</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/de0000/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/de0000/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 5</p>
           </div>
         </div>
@@ -66,27 +72,27 @@
         <div class="playlists-group">
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/ff00ff/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/ff00ff/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 1</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/00ffb7/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/00ffb7/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 2</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/007691/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/007691/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 3</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/d7de00/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/d7de00/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 4</p>
           </div>
           <!--item-->
           <div class="playlist-card">
-            <img src="https://dummyimage.com/128x128/de0000/fff" class="playlist-card-img" alt="" />
+            <img src="https://dummyimage.com/128x128/de0000/fff" class="playlist-card-img notched-corners" alt="" />
             <p class="playlist-card-name">style 5</p>
           </div>
         </div>
@@ -106,7 +112,7 @@
     <i class="fas fa-th-list nav-btn icon hide"></i>
     <h1 class="current-song-name">song 1</h1>
     <p class="artist-name hide">artist 1</p>
-    <img src="https://dummyimage.com/128x128/1e6656/ffffff" class="music-cover hide" alt="">
+    <img src="https://dummyimage.com/128x128/1e6656/ffffff" class="music-cover notched-corners hide" alt="">
     <div class="seek-bar-container">
       <label for="music-seek-bar" hidden>Music seek bar</label>
       <input name="music-seek-bar" type="range" class="music-seek-bar" value="0" />
